@@ -1,9 +1,10 @@
-const express = require("express");
+import express from "express";
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Application Successfully Deployed on Render!");
+  res.send("🎉 Final Demo Deployment Successful!");
 });
 
 app.listen(PORT, () => {
